@@ -1,0 +1,26 @@
+(my_env) shanto@shanto-VivoBook-S15-X530UA:~/IIT/MiniFacebook/MiniFacebook$ chmod +x minio
+(my_env) shanto@shanto-VivoBook-S15-X530UA:~/IIT/MiniFacebook/MiniFacebook$ ./minio server /data
+ERROR Unable to initialize backend: Unable to write to the backend
+      > Please ensure MinIO binary has write permissions for the backend
+      HINT:
+        Use 'sudo chown -R shanto /data && sudo chmod u+rxw /data' to provide sufficient permissions.
+(my_env) shanto@shanto-VivoBook-S15-X530UA:~/IIT/MiniFacebook/MiniFacebook$ ./minio server /home/shanto/IIT/MiniFacebook/minio
+Formatting 1st pool, 1 set(s), 1 drives per set.
+WARNING: Host local has more than 0 drives of set. A host failure will result in data becoming unavailable.
+MinIO Object Storage Server
+Copyright: 2015-2022 MinIO, Inc.
+License: GNU AGPLv3 <https://www.gnu.org/licenses/agpl-3.0.html>
+Version: RELEASE.2022-07-17T15-43-14Z (go1.18.4 linux/amd64)
+
+Status:         1 Online, 0 Offline. 
+API: http://192.168.31.156:9000  http://127.0.0.1:9000     
+RootUser: minioadmin 
+RootPass: minioadmin 
+Console: http://192.168.31.156:41609 http://127.0.0.1:41609   
+RootUser: minioadmin 
+RootPass: minioadmin 
+
+Command-line: https://docs.min.io/docs/minio-client-quickstart-guide
+   $ mc alias set myminio http://192.168.31.156:9000 minioadmin minioadmin
+
+Documentation: https://docs.min.io
